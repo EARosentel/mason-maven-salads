@@ -1,0 +1,43 @@
+<% include ../partials/header %>
+
+<div class="jumbotron">
+    <div class="container" id="indexJumbotron">
+        <div class="row">
+            <h1>Mason Maven Salads
+            <small class="pull-right" id="tagline">where the combinations are endless.</small>
+            </h1>
+        </div>
+        
+        <div class="row">
+            <a class="btn btn-lg btn-success pull-right" href="/recipes/new">Add Your Own Recipe</a>
+        </div> 
+    
+    </div>
+</div>
+
+
+ <div class="container">   
+    <div class="row text-center" style="display:flex; flex-wrap:wrap">
+        <% Recipes.forEach(function(recipe){%>
+            <div class="col-md-3 col-sm-6">
+                
+                <div id="recipeCollection" class="thumbnail">
+                    <img class="img-rounded" src="<%=recipe.image%>">
+                    <div class="caption-full">
+                        <h4><%=recipe.name%></h4>
+                        <h6>Submitted by <%=recipe.author.username%></h6>
+                        <a class="btn btn-success" href="/recipes/<%= recipe._id %>">More Info</a>
+                    </div>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            
+        <% })%>
+    </div>
+    
+</div>
+
+
+<% include ../partials/footer %>

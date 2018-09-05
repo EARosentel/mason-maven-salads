@@ -1,0 +1,121 @@
+.navbar {
+    background-color: #ccffcc;
+    border-bottom-color: white;
+
+}
+
+.navbar > .container-fluid {
+    width: 90%;
+}
+
+html, body {
+    background-color: #e6ffe6;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 20px;
+}
+
+.deleteForm {
+    display: inline-block;
+    padding: 0 0 10px 0;
+}
+
+
+
+.jumbotron{
+    background: no-repeat center url("https://farm3.staticflickr.com/2297/2472709704_964c6183a7.jpg");
+    background-size: cover;
+    margin-top: -50px;
+}
+
+.jumbotron h1 {
+   text-shadow: 2px 2px #000;
+    color: #99ff99;
+    margin: 50px;
+}
+
+.jumbotron small {
+    color: #ccffcc;
+}
+
+.jumbotron .container{
+    padding: 100px 0;
+}
+
+.jumbotron .btn {
+    margin: 100px 50px 0 0;
+}
+
+#recipeDescription {
+    padding: 10px 0;
+}
+
+#indexJumbotron {
+    padding: 0;
+}
+
+#indexJumbotron .btn {
+    margin: 30px 50px 0 0;
+}
+
+#recipeCollection{
+    /*background-color: #222;*/
+    /*color: white;*/
+    border: none;
+}
+
+.centerMe {
+    width: 30%;
+    margin: 30px auto;
+}
+
+.centerMe h1 {
+    display: block;
+    margin: 80px auto 30px auto;
+    text-align: center;
+}
+
+#spaceFooter {
+    margin-top: 50px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+
+}
+
+.footer > .container {
+    padding: 10px 0;
+    width: 90%;
+}
+
+.footer h6 {
+    margin-top: 20px;
+    color: white;
+}
+
+#messages{
+    padding: 10px;
+    width: 30%;
+    margin: 0 35%;
+    text-align: center;
+    position: fixed;
+}
+
+.alert {
+    margin: 0 auto;
+    padding: 3px 20px;
+}

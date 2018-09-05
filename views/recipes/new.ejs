@@ -1,0 +1,44 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Create a new recipe</h1>
+    
+    
+    
+        <div style="width: 30%; margin: 30px auto">
+            <form action="/recipes" method="POST">
+                <div class="form-group">
+                    <input name="name" class="form-control" type="text" placeholder="recipe name">
+                </div>
+                <div class="form-group">
+                    <input name="image" class="form-control" type="text" placeholder="image url">
+                </div>
+                <div class="form-group">
+                    <label for="nutrition">Nutrition</label>
+                    <input name="nutrition" class="form-control" type="number" placeholder="1">
+                    <label for="flavor">Flavor</label>
+                    <input name="flavor" class="form-control" type="number" placeholder="1">
+                    <label for="nutrition">Cost</label>
+                    <input name="cost" class="form-control" type="number" placeholder="1">
+                </div>
+                <div class="form-group">
+                    <input name="description" class="form-control" type="text" placeholder="description">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-large btn-primary btn-block">
+                </div>
+
+            </form>
+            <a href="/recipes">Back</a>
+        </div>
+    
+    
+    
+        
+        
+    </div>
+    
+</div>
+
+<% include ../partials/footer %>

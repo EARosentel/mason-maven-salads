@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mason Maven Salads</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        
+    </head>
+
+    <body>
+        <div>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Mason Maven Salads</a>
+                </div>
+                
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav navbar-right nav">
+                        <% if(!thisUser){ %>
+                        <li><a href="/login">Log In</a></li>
+                        <li><a href="/register">Sign Up</a></li>
+                        <% } else { %>
+                        <li><a href="#">Signed In As <%= thisUser.username %></a></li>
+                        <li><a href="/logout">Log Out</a></li>
+                        <% } %>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+        <div class="container-fluid centerMe" id="messages">    
+            <% if(messageSuccess && messageSuccess.length > 0){ %>    
+            <div class="alert alert-success">
+                <%= messageSuccess %>
+            </div>
+            <% } %>
+            <% if(messageError && messageError.length > 0){ %>  
+            <div class="alert alert-danger">
+                <%= messageError %>
+            </div>
+            <% } %>
+        </div>
